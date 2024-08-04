@@ -1,0 +1,135 @@
+
+:root {
+  --background: #f9f9f9;
+  --white-contrast: #f6f6f6;
+  --primary-color: white;
+  --title-color: #f80000;
+  --subtitle-color: #e4a6a6;
+  --content-color: #961717;
+  --link-color: #ff00b7;
+  --caption-color: #7f8c8d;
+  --highlight: #f8000057;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--gradient);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--gradient);
+  color: var(--white);
+  border-radius: 8px;
+  text-align: left;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.main-title {
+  color: var(--title-color);
+  text-align: left;
+  font-size: 60px;
+
+}
+
+.main-title img {
+  width: 50px;
+  height: auto;
+}
+
+.intro-title, .section-title, .tips-title, .errors-title {
+  color: var(--subtitle-color);
+}
+
+.subsection-title {
+  color: var(--content-color);
+}
+
+.warning, .tip {
+  background-color: var(--white-contrast);
+  border-left: 4px solid var(--subtitle-color);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.warning strong, .tip strong {
+  color: var(--subtitle-color);
+}
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  color: var(--caption-color);
+}
+
+.inline-image {
+  display: inline;
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.highlight {
+  background-color: var(--highlight);
+}
+
+@media (max-width: 768px) {
+  table {
+      font-size: 0.8em;
+  }
+}
+
+.errors-title, .tips-title {
+  color: var(--subtitle-color);
+}
+
+ul, ol {
+  margin: 10px 0;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+}
+
